@@ -1,4 +1,4 @@
-package com.example.viewmodelandlivedataexample.Model;
+package com.example.viewmodelandlivedataexample.Example1;
 
 import android.app.Application;
 
