@@ -6,13 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        android:id="@+id/guidle"
+        />
     <TextView
+        android:id="@+id/tv_score_teamB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/guidle"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tv_score_teamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@id/guidle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn_score_A_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Score + 9"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_score_teamA"
+        app:layout_constraintRight_toRightOf="@id/tv_score_teamA"
+        app:layout_constraintTop_toBottomOf="@id/tv_score_teamA" />
+
+    <Button
+        android:id="@+id/btn_score_A_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Score + 6"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_score_A_9"
+        app:layout_constraintRight_toRightOf="@id/btn_score_A_9"
+        app:layout_constraintTop_toBottomOf="@id/btn_score_A_9" />
+
+    <Button
+        android:id="@+id/btn_score_A_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Score + 3"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_score_A_6"
+        app:layout_constraintRight_toRightOf="@id/btn_score_A_6"
+        app:layout_constraintTop_toBottomOf="@id/btn_score_A_6" />
+
+    <Button
+        android:id="@+id/btn_score_B_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Score + 9"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_score_teamB"
+        app:layout_constraintRight_toRightOf="@id/tv_score_teamB"
+        app:layout_constraintTop_toBottomOf="@id/tv_score_teamB" />
+
+    <Button
+        android:id="@+id/btn_score_B_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Score + 6"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_score_B_9"
+        app:layout_constraintRight_toRightOf="@id/btn_score_B_9"
+        app:layout_constraintTop_toBottomOf="@id/btn_score_B_9" />
+
+    <Button
+        android:id="@+id/btn_score_B_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Score + 3"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_score_B_6"
+        app:layout_constraintRight_toRightOf="@id/btn_score_B_6"
+        app:layout_constraintTop_toBottomOf="@id/btn_score_B_6" />
+
+    <TextView
+        android:id="@+id/tmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
