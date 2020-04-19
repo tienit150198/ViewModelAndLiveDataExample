@@ -1,5 +1,7 @@
 # ViewModelAndLiveDataExample
 
+[Video Demo](https://youtu.be/ANnGRA6V1xU)
+
 ----
 ## [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
 
@@ -99,12 +101,12 @@ LiveData<User> user = Transformations.switchMap(userId, id -> getUser(id) );
 ```
 
 # Tham khảo
-https://viblo.asia/p/android-architecture-components-viewmodel-xu-ly-configuration-changes-chua-bao-gio-don-gian-den-the-ByEZk3A4ZQ0
+1. https://viblo.asia/p/android-architecture-components-viewmodel-xu-ly-configuration-changes-chua-bao-gio-don-gian-den-the-ByEZk3A4ZQ0
 
-https://viblo.asia/p/android-livedata-oOVlY1Yrl8W
+2. https://viblo.asia/p/android-livedata-oOVlY1Yrl8W
 
-https://developer.android.com/topic/libraries/architecture/viewmodel
+3. https://developer.android.com/topic/libraries/architecture/viewmodel
 
-https://developer.android.com/reference/android/arch/lifecycle/LiveData.html
+4. https://developer.android.com/reference/android/arch/lifecycle/LiveData.html
 
-https://developer.android.com/topic/libraries/view-binding
+5. https://developer.android.com/topic/libraries/view-binding
