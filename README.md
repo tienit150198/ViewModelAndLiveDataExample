@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 ﻿# ViewModelAndLiveDataExample
+=======
+# ViewModelAndLiveDataExample
+>>>>>>> 04404d5ec1fc07360d974f487f8f3fd2aaa52a1b
 
 ----
 ## [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
 
+<<<<<<< HEAD
 > Là một class được thiết kế để lưu trữ và quản lý dữ liệu trong một lifecycler riêng, bảo toàn dữ liệu kể cả khi xoay màn hình.
 
 <img src="https://imgur.com/yCKwbDt">
@@ -14,6 +19,19 @@ Thông thường, khi xoay màn hình, activity sẽ destroy và create lại. K
 
 ### Config
 Thêm thư viện sau:
+=======
+> L� m?t class du?c thi?t k? d? luu tr? v� qu?n l� d? li?u trong m?t lifecycler ri�ng, b?o to�n d? li?u k? c? khi xoay m�n h�nh.
+
+<img src="https://imgur.com/yCKwbDt">
+
+Th�ng thu?ng, khi xoay m�n h�nh, activity s? destroy v� create l?i. Khi d� d? li?u to�n b? s? b? bi?n m?t.
+
+�? kh?c ph?c di?u n�y, ch�ng ta c� th? s? d?ng h�m `onSaveInstanceState()` ho?c ViewModel c?a android.
+
+
+### Config
+Th�m thu vi?n sau:
+>>>>>>> 04404d5ec1fc07360d974f487f8f3fd2aaa52a1b
 
 ```ruby
 // ViewModel
