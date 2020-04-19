@@ -35,6 +35,15 @@ public class DetailFragment extends Fragment {
 
         // important: getActivity()
         mViewModel = ViewModelProviders.of(getActivity()).get(MasterViewModel.class);
+        /* listener when selected new item
+        should listener in onCreate, avoid calling multiple times
+         */
+        mViewModel.getmSelectedItem().observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(String s) {
+                detailBinding.tvContent.setText(s);
+            }
+        });
     }
 
     @Override
@@ -44,18 +53,5 @@ public class DetailFragment extends Fragment {
         detailBinding = FragmentDetailBinding.inflate(inflater, container, false);
         // Inflate the layout for this fragment
         return detailBinding.getRoot();
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        // listener when selected new item
-        mViewModel.getmSelectedItem().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(String s) {
-                detailBinding.tvContent.setText(s);
-            }
-        });
     }
 }

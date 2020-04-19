@@ -44,6 +44,10 @@ public class MasterFragment extends Fragment implements OnClickItemListener {
         mViewModel = ViewModelProviders.of(getActivity()).get(MasterViewModel.class);
         // init data
         mViewModel.setmData(mViewModel.getSampleData());
+        /* listener when change data
+        should listener in onCreate, avoid calling multiple times
+        */
+        mViewModel.getmData().observe(this, strings -> mAdapter.setData((ArrayList<String>) strings));
     }
 
     @Override
@@ -71,8 +75,6 @@ public class MasterFragment extends Fragment implements OnClickItemListener {
         masterBinding.masterRecycler.setLayoutManager(layoutManager);
         masterBinding.masterRecycler.setHasFixedSize(true);
 
-        // listener when change data
-        mViewModel.getmData().observe(this, strings -> mAdapter.setData((ArrayList<String>) strings));
     }
 
     @Override
