@@ -6,7 +6,7 @@
 > Là một class được thiết kế để lưu trữ và quản lý dữ liệu trong một lifecycler riêng, bảo toàn dữ liệu kể cả khi xoay màn hình.
 
 
-![Alt text](https://imgur.com/yCKwbDt?raw=true "ViewModel")
+![yCKwbDt](https://user-images.githubusercontent.com/52131412/79693762-38a57580-829f-11ea-99a8-4148a46f532d.png)
 
 Thông thường, khi xoay màn hình, activity sẽ destroy và create lại. Khi đó dữ liệu toàn bộ sẽ bị biến mất.
 
